@@ -36,8 +36,13 @@ public class Filme {
         this.valoralugel = valoralugel;
     }
     public void  exibirdetalhes(){
+        System.out.println(getTitulo()+" "+ getGenero()+""+ getValoralugel());
 
     }
-    public void aplicardesconto(){}
+    public void aplicardesconto(){
+        double desc = -19;
+
+        System.out.println("valor com desconto é "+ desc);
+    }
 }
 

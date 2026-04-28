@@ -8,16 +8,18 @@ public class Aluguel {
     private int dias;
 
 
+
     public Aluguel(Cliente cliente, Filme filme, int dias) {
         this.cliente = cliente;
         this.filme = filme;
         this.dias = dias;
     }
-    public double calcularValor(){
+    public double calcularValor() {
         double valor = dias * 2;
-        if  (dias > 49){
+        if (dias > 49) {
             valor = valor - 19;
         }
+        System.out.println("o total é: " + valor);
         return  valor;
     }
 
@@ -44,6 +46,7 @@ public class Aluguel {
     public void setDias(int dias) {
         this.dias = dias;
     }
+
 }
 
 
